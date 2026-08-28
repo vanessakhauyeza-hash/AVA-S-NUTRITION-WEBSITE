@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://vanessakhauyeza-hash.github.io/AVA-S-NUTRITION-WEBSITE/sitemap.xml
