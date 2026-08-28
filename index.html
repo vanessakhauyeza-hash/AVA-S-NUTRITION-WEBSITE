@@ -1,17 +1,86 @@
+```html
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
+
+  <!-- Mobile responsiveness -->
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Ava's Nutrition Hub — free, practical nutrition information for communities, with a focus on foods and everyday choices relevant to Malawi.">
-  <title>Ava's Nutrition Hub | Practical Nutrition for Everyone</title>
+
+  <!-- SEO -->
+  <title>Ava's Nutrition Hub | Nutrition Information for Malawi</title>
+  <meta
+    name="description"
+    content="Ava's Nutrition Hub provides free, practical and easy-to-understand nutrition information, Malawian food guidance and educational tools for everyday healthy eating."
+  >
+  <meta
+    name="keywords"
+    content="nutrition Malawi, Malawi nutrition information, Malawian foods, healthy eating Malawi, nutrition education, balanced diet Malawi, food and nutrition"
+  >
+  <meta name="author" content="Ava's Nutrition Hub">
+  <meta name="robots" content="index, follow">
+
+  <!-- Canonical URL -->
+  <link
+    rel="canonical"
+    href="https://vanessakhauyeza-hash.github.io/AVA-S-NUTRITION-WEBSITE/"
+  >
+
+  <!-- Open Graph: improves how the website appears when shared -->
+  <meta property="og:title" content="Ava's Nutrition Hub | Nutrition Information for Malawi">
+  <meta
+    property="og:description"
+    content="Free, practical and community-focused nutrition information with examples relevant to Malawi."
+  >
+  <meta property="og:type" content="website">
+  <meta
+    property="og:url"
+    content="https://vanessakhauyeza-hash.github.io/AVA-S-NUTRITION-WEBSITE/"
+  >
+
+  <!-- Website icon -->
+  <link rel="icon" href="data:,">
+
+  <!-- Stylesheet -->
   <link rel="stylesheet" href="style.css">
+
+  <!-- Structured data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    "name": "Ava's Nutrition Hub",
+    "url": "https://vanessakhauyeza-hash.github.io/AVA-S-NUTRITION-WEBSITE/",
+    "description": "A free digital nutrition platform providing practical nutrition information and locally relevant food guidance.",
+    "inLanguage": "en",
+    "about": {
+      "@type": "Thing",
+      "name": "Nutrition education"
+    }
+  }
+  </script>
 </head>
+
 <body>
+
+  <!-- HEADER -->
   <header class="site-header">
-    <nav class="nav container">
-      <a class="brand" href="#home"><span>🥗</span> Ava's Nutrition Hub</a>
-      <button class="menu-btn" aria-label="Open menu">☰</button>
+    <nav class="nav container" aria-label="Main navigation">
+
+      <a class="brand" href="#home" aria-label="Ava's Nutrition Hub home">
+        <span aria-hidden="true">🥗</span>
+        Ava's Nutrition Hub
+      </a>
+
+      <button
+        class="menu-btn"
+        aria-label="Open navigation menu"
+        aria-expanded="false"
+        type="button"
+      >
+        ☰
+      </button>
+
       <div class="nav-links">
         <a href="#home">Home</a>
         <a href="#learn">Learn</a>
@@ -19,120 +88,327 @@
         <a href="#calculator">Calculator</a>
         <a href="#resources">Resources</a>
       </div>
+
     </nav>
   </header>
 
+
   <main>
+
+    <!-- HERO -->
     <section id="home" class="hero">
       <div class="container hero-grid">
+
         <div>
           <p class="eyebrow">FREE • PRACTICAL • COMMUNITY-FOCUSED</p>
-          <h1>Better nutrition information, made easier to access.</h1>
+
+          <h1>
+            Better nutrition information, made easier to access.
+          </h1>
+
           <p class="hero-text">
             Ava's Nutrition Hub is a digital nutrition platform designed to make
-            reliable, practical nutrition information easier to understand and use
-            in everyday life.
+            reliable, practical nutrition information easier to understand and
+            use in everyday life, with a focus on food and nutrition examples
+            relevant to Malawi.
           </p>
+
           <div class="hero-actions">
-            <a class="btn primary" href="#learn">Start learning</a>
-            <a class="btn secondary" href="#calculator">Try the calculator</a>
+            <a class="btn primary" href="#learn">
+              Start learning
+            </a>
+
+            <a class="btn secondary" href="#calculator">
+              Try the calculator
+            </a>
           </div>
         </div>
+
         <div class="hero-card">
-          <div class="plate">🥬 🍌 🥚</div>
-          <h3>Nutrition should be useful, not confusing.</h3>
-          <p>Explore food groups, balanced meals, local food examples and simple nutrition concepts.</p>
+          <div class="plate" aria-hidden="true">
+            🥬 🍌 🥚
+          </div>
+
+          <h2>Nutrition should be useful, not confusing.</h2>
+
+          <p>
+            Explore food groups, balanced meals, local food examples and
+            simple nutrition concepts.
+          </p>
         </div>
+
       </div>
     </section>
 
-    <section class="impact">
+
+    <!-- KEY FEATURES -->
+    <section class="impact" aria-label="Ava's Nutrition Hub features">
       <div class="container impact-grid">
-        <div><strong>Free access</strong><span>Designed for the public</span></div>
-        <div><strong>Local relevance</strong><span>Examples can reflect Malawian foods</span></div>
-        <div><strong>Digital first</strong><span>Accessible on phones and computers</span></div>
-        <div><strong>Evidence-minded</strong><span>Built to grow with trusted sources</span></div>
+
+        <div>
+          <strong>Free access</strong>
+          <span>Designed for the public</span>
+        </div>
+
+        <div>
+          <strong>Local relevance</strong>
+          <span>Examples can reflect Malawian foods</span>
+        </div>
+
+        <div>
+          <strong>Digital first</strong>
+          <span>Accessible on phones and computers</span>
+        </div>
+
+        <div>
+          <strong>Evidence-minded</strong>
+          <span>Built to grow with trusted sources</span>
+        </div>
+
       </div>
     </section>
 
+
+    <!-- NUTRITION BASICS -->
     <section id="learn" class="section container">
+
       <div class="section-heading">
         <p class="eyebrow">LEARN</p>
+
         <h2>Nutrition basics</h2>
-        <p>Start with simple concepts that can support everyday food choices.</p>
+
+        <p>
+          Learn simple nutrition concepts that can support everyday food
+          choices and healthier eating habits.
+        </p>
       </div>
+
+
       <div class="cards">
+
         <article class="card">
-          <div class="icon">🍚</div>
+          <div class="icon" aria-hidden="true">🍚</div>
+
           <h3>Carbohydrates</h3>
-          <p>Important sources of energy. Common examples include maize, rice, potatoes, sweet potatoes and grains.</p>
+
+          <p>
+            Carbohydrates are important sources of energy. Common examples
+            include maize, rice, potatoes, sweet potatoes and other grains
+            and roots.
+          </p>
         </article>
+
+
         <article class="card">
-          <div class="icon">🥚</div>
+          <div class="icon" aria-hidden="true">🥚</div>
+
           <h3>Protein</h3>
-          <p>Helps build and maintain body tissues. Sources include eggs, beans, fish, meat, milk and other legumes.</p>
+
+          <p>
+            Protein helps build and maintain body tissues. Sources include
+            eggs, beans, peas, fish, meat, milk and other protein-rich foods.
+          </p>
         </article>
+
+
         <article class="card">
-          <div class="icon">🥑</div>
+          <div class="icon" aria-hidden="true">🥑</div>
+
           <h3>Healthy fats</h3>
-          <p>Fats provide energy and support important body functions. Portion size and overall dietary pattern matter.</p>
+
+          <p>
+            Fats provide energy and support important body functions.
+            The type and amount of fat can form part of an overall healthy
+            dietary pattern.
+          </p>
         </article>
+
+
         <article class="card">
-          <div class="icon">🥬</div>
+          <div class="icon" aria-hidden="true">🥬</div>
+
           <h3>Micronutrients</h3>
-          <p>Vitamins and minerals are needed in smaller amounts but are essential for health and normal body functions.</p>
+
+          <p>
+            Vitamins and minerals are needed in smaller amounts but are
+            essential for health, growth and normal body functions.
+          </p>
         </article>
+
       </div>
     </section>
 
+
+    <!-- MALAWIAN FOOD GUIDE -->
     <section id="foods" class="section alt">
+
       <div class="container">
+
         <div class="section-heading">
-          <p class="eyebrow">LOCAL FOOD GUIDE</p>
-          <h2>Build a balanced plate</h2>
-          <p>Use the examples below as a starting point. A balanced diet varies by person, age, activity and circumstances.</p>
+          <p class="eyebrow">MALAWI FOOD GUIDE</p>
+
+          <h2>
+            Build a balanced plate with locally familiar foods
+          </h2>
+
+          <p>
+            Use these examples as a starting point for thinking about
+            balanced meals. Dietary needs vary by age, activity, health
+            status and individual circumstances.
+          </p>
         </div>
+
+
         <div class="plate-guide">
-          <div class="plate-visual">
-            <div class="plate-quarter one">🥬<span>Vegetables</span></div>
-            <div class="plate-quarter two">🍠<span>Staple foods</span></div>
-            <div class="plate-quarter three">🐟<span>Protein</span></div>
-            <div class="plate-quarter four">🍌<span>Fruit</span></div>
+
+          <div class="plate-visual" aria-label="Balanced plate food groups">
+
+            <div class="plate-quarter one">
+              🥬
+              <span>Vegetables</span>
+            </div>
+
+            <div class="plate-quarter two">
+              🍠
+              <span>Staple foods</span>
+            </div>
+
+            <div class="plate-quarter three">
+              🐟
+              <span>Protein</span>
+            </div>
+
+            <div class="plate-quarter four">
+              🍌
+              <span>Fruit</span>
+            </div>
+
           </div>
+
+
           <div class="food-list">
-            <div><b>Staple foods</b><p>Nsima, rice, potatoes, sweet potatoes and other grains or roots.</p></div>
-            <div><b>Protein foods</b><p>Beans, peas, eggs, fish, chicken and other protein-rich foods.</p></div>
-            <div><b>Vegetables</b><p>Choose a variety of leafy and other vegetables where available.</p></div>
-            <div><b>Fruit</b><p>Include fruit as part of a varied eating pattern.</p></div>
+
+            <div>
+              <b>Staple foods</b>
+
+              <p>
+                Nsima, rice, potatoes, sweet potatoes and other grains
+                or roots.
+              </p>
+            </div>
+
+
+            <div>
+              <b>Protein foods</b>
+
+              <p>
+                Beans, peas, eggs, fish, chicken and other protein-rich
+                foods.
+              </p>
+            </div>
+
+
+            <div>
+              <b>Vegetables</b>
+
+              <p>
+                Include a variety of leafy and other vegetables where
+                available.
+              </p>
+            </div>
+
+
+            <div>
+              <b>Fruit</b>
+
+              <p>
+                Include fruit as part of a varied and balanced eating
+                pattern.
+              </p>
+            </div>
+
           </div>
+
         </div>
       </div>
     </section>
 
+
+    <!-- ENERGY CALCULATOR -->
     <section id="calculator" class="section container">
+
       <div class="section-heading">
+
         <p class="eyebrow">LEARNING TOOL</p>
-        <h2>Energy needs calculator</h2>
-        <p>This educational calculator gives an estimate, not a medical prescription.</p>
+
+        <h2>Daily energy needs calculator</h2>
+
+        <p>
+          Use this educational calculator to estimate daily energy
+          requirements based on basic personal information and activity level.
+        </p>
+
       </div>
+
+
       <div class="calculator">
+
         <form id="calorieForm">
-          <label>Sex
+
+          <label for="sex">
+            Sex
+
             <select id="sex" required>
               <option value="female">Female</option>
               <option value="male">Male</option>
             </select>
           </label>
-          <label>Age
-            <input id="age" type="number" min="18" max="100" required>
+
+
+          <label for="age">
+            Age
+
+            <input
+              id="age"
+              type="number"
+              min="18"
+              max="100"
+              required
+            >
           </label>
-          <label>Weight (kg)
-            <input id="weight" type="number" min="30" max="300" step="0.1" required>
+
+
+          <label for="weight">
+            Weight (kg)
+
+            <input
+              id="weight"
+              type="number"
+              min="30"
+              max="300"
+              step="0.1"
+              required
+            >
           </label>
-          <label>Height (cm)
-            <input id="height" type="number" min="120" max="230" step="0.1" required>
+
+
+          <label for="height">
+            Height (cm)
+
+            <input
+              id="height"
+              type="number"
+              min="120"
+              max="230"
+              step="0.1"
+              required
+            >
           </label>
-          <label>Activity
+
+
+          <label for="activity">
+            Activity level
+
             <select id="activity" required>
               <option value="1.2">Mostly sedentary</option>
               <option value="1.375">Lightly active</option>
@@ -141,59 +417,182 @@
               <option value="1.9">Extremely active</option>
             </select>
           </label>
-          <button class="btn primary" type="submit">Calculate estimate</button>
+
+
+          <button class="btn primary" type="submit">
+            Calculate estimate
+          </button>
+
         </form>
-        <div id="result" class="result" aria-live="polite">
+
+
+        <div
+          id="result"
+          class="result"
+          aria-live="polite"
+          aria-atomic="true"
+        >
+
           <span class="result-number">—</span>
-          <p>Enter your details to see an estimated daily energy requirement.</p>
+
+          <p>
+            Enter your details to see an estimated daily energy requirement.
+          </p>
+
         </div>
+
       </div>
-      <p class="disclaimer">Educational use only. Energy needs can differ because of health status, pregnancy, growth, medications and many other factors. For personalised advice, consult a qualified health professional.</p>
+
+
+      <p class="disclaimer">
+        Educational use only. Energy needs can differ because of health
+        status, pregnancy, growth, medications and many other factors.
+        This calculator does not provide medical advice. For personalised
+        nutrition advice, consult a qualified health professional.
+      </p>
+
     </section>
 
+
+    <!-- RESOURCES -->
     <section id="resources" class="section alt">
+
       <div class="container">
+
         <div class="section-heading">
+
           <p class="eyebrow">RESOURCES</p>
-          <h2>Growing into a digital health resource</h2>
+
+          <h2>Nutrition resources for everyday life</h2>
+
           <p>
-            The platform can be expanded with evidence-based articles, nutrition
-            education materials, community resources, recipes, food databases,
-            data dashboards and links to trusted health organisations.
+            Ava's Nutrition Hub can grow into a wider digital health resource
+            containing evidence-based articles, nutrition education materials,
+            community resources, recipes, food databases, data dashboards and
+            links to trusted health organisations.
           </p>
+
         </div>
+
+
         <div class="resource-grid">
-          <div class="resource"><span>📚</span><h3>Nutrition education</h3><p>Simple articles and guides written for everyday readers.</p></div>
-          <div class="resource"><span>📊</span><h3>Data & insights</h3><p>Future dashboards can help communicate nutrition trends and patterns.</p></div>
-          <div class="resource"><span>📱</span><h3>Mobile access</h3><p>Responsive design allows access from phones, tablets and computers.</p></div>
+
+          <div class="resource">
+            <span aria-hidden="true">📚</span>
+
+            <h3>Nutrition education</h3>
+
+            <p>
+              Simple nutrition articles and guides written for everyday
+              readers.
+            </p>
+          </div>
+
+
+          <div class="resource">
+            <span aria-hidden="true">📊</span>
+
+            <h3>Data &amp; insights</h3>
+
+            <p>
+              Future dashboards can help communicate nutrition trends and
+              patterns.
+            </p>
+          </div>
+
+
+          <div class="resource">
+            <span aria-hidden="true">📱</span>
+
+            <h3>Mobile access</h3>
+
+            <p>
+              Responsive design allows access from phones, tablets and
+              computers.
+            </p>
+          </div>
+
         </div>
+
       </div>
     </section>
 
+
+    <!-- ABOUT THE PROJECT -->
     <section class="section about">
+
       <div class="container about-box">
+
         <div>
+
           <p class="eyebrow">THE PROJECT</p>
-          <h2>From nutrition knowledge to digital access.</h2>
+
+          <h2>
+            From nutrition knowledge to digital access.
+          </h2>
+
           <p>
-            This project brings together nutrition knowledge and computer science
-            to explore how digital tools can make useful health information more
-            accessible. It is intended as a growing portfolio project and a
-            practical example of using technology to support health education.
+            Ava's Nutrition Hub brings together nutrition knowledge and
+            computer science to explore how digital tools can make useful
+            health information more accessible.
           </p>
+
+          <p>
+            The project is designed as a growing digital health and nutrition
+            resource, with a focus on practical information, local relevance
+            and responsible use of technology.
+          </p>
+
         </div>
-        <div class="project-badge">Nutrition × Technology<br><small>Malawi-focused concept</small></div>
+
+
+        <div class="project-badge">
+          Nutrition × Technology
+          <br>
+          <small>Malawi-focused digital health concept</small>
+        </div>
+
       </div>
+
     </section>
+
   </main>
 
+
+  <!-- FOOTER -->
   <footer>
+
     <div class="container footer-grid">
-      <div><b>Ava's Nutrition Hub</b><p>Free, practical nutrition education.</p></div>
-      <div><p>Built as a digital health and nutrition portfolio project.</p><p>© <span id="year"></span> Ava's Nutrition Hub</p></div>
+
+      <div>
+        <b>Ava's Nutrition Hub</b>
+
+        <p>
+          Free, practical nutrition education.
+        </p>
+      </div>
+
+
+      <div>
+
+        <p>
+          Built as a digital health and nutrition portfolio project.
+        </p>
+
+        <p>
+          © <span id="year"></span> Ava's Nutrition Hub
+        </p>
+
+      </div>
+
     </div>
+
   </footer>
 
+
+  <!-- JavaScript -->
   <script src="script.js"></script>
+
 </body>
 </html>
+```
