@@ -1,4 +1,3 @@
-```html
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -23,7 +22,7 @@
   <!-- Canonical URL -->
   <link
     rel="canonical"
-    href="https://vanessakhauyeza-hash.github.io/AVA-S-NUTRITION-WEBSITE/"
+    href="https://avasnutritionhub.org/"
   >
 
   <!-- Open Graph: improves how the website appears when shared -->
@@ -35,11 +34,13 @@
   <meta property="og:type" content="website">
   <meta
     property="og:url"
-    content="https://vanessakhauyeza-hash.github.io/AVA-S-NUTRITION-WEBSITE/"
+    content="https://avasnutritionhub.org/"
   >
 
   <!-- Website icon -->
-  <link rel="icon" href="data:,">
+  <link rel="icon" href="logo.png" type="image/png">
+  <meta name="theme-color" content="#124634">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
 
   <!-- Stylesheet -->
   <link rel="stylesheet" href="style.css">
@@ -50,7 +51,7 @@
     "@context": "https://schema.org",
     "@type": "WebSite",
     "name": "Ava's Nutrition Hub",
-    "url": "https://vanessakhauyeza-hash.github.io/AVA-S-NUTRITION-WEBSITE/",
+    "url": "https://avasnutritionhub.org/",
     "description": "A free digital nutrition platform providing practical nutrition information and locally relevant food guidance.",
     "inLanguage": "en",
     "about": {
@@ -68,8 +69,8 @@
     <nav class="nav container" aria-label="Main navigation">
 
       <a class="brand" href="#home" aria-label="Ava's Nutrition Hub home">
-        <span aria-hidden="true">🥗</span>
-        Ava's Nutrition Hub
+        <img src="logo.png" alt="" class="brand-logo">
+        <span>Ava's Nutrition Hub</span>
       </a>
 
       <button
@@ -86,6 +87,7 @@
   <a href="#learn">Learn</a>
   <a href="malawian-foods.html">Malawi Foods</a>
   <a href="#calculator">Calculator</a>
+  <a href="#digital">Digital</a>
   <a href="#resources">Resources</a>
 </div>
 
@@ -168,6 +170,63 @@
       </div>
     </section>
 
+
+    <!-- LIVE HUB -->
+    <section class="live-hub section">
+      <div class="container">
+        <div class="live-panel">
+          <div>
+            <p class="eyebrow">LIVE NUTRITION HUB</p>
+            <h2 id="liveGreeting">Welcome to Ava's Nutrition Hub</h2>
+            <p id="dailyTip" class="live-tip">Loading today's nutrition tip…</p>
+            <div class="live-actions">
+              <button class="btn primary" id="newTip" type="button">New nutrition tip</button>
+              <a class="btn secondary" href="#calculator">Try a tool</a>
+            </div>
+          </div>
+          <div class="live-clock-card" aria-label="Current local time">
+            <span>Local time</span>
+            <strong id="liveClock">--:--:--</strong>
+            <small>Malawi time</small>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- DIGITAL SOLUTIONS -->
+    <section id="digital" class="section">
+      <div class="container">
+        <div class="section-heading">
+          <p class="eyebrow">DIGITAL HEALTH & WEB TECHNOLOGY</p>
+          <h2>Nutrition knowledge, supported by digital tools.</h2>
+          <p>Ava's Nutrition Hub explores practical ways technology can improve access to nutrition education, information management and community-focused digital health solutions.</p>
+        </div>
+        <div class="cards digital-cards">
+          <article class="card interactive-card"><div class="icon">💻</div><h3>Web Solutions</h3><p>Responsive websites and interactive tools designed for health, nutrition and community organisations.</p></article>
+          <article class="card interactive-card"><div class="icon">📊</div><h3>Data & Information</h3><p>Digital databases, data collection and simple dashboards can turn information into useful insights.</p></article>
+          <article class="card interactive-card"><div class="icon">📱</div><h3>Digital Health Tools</h3><p>Accessible calculators, educational resources and mobile-friendly experiences for everyday users.</p></article>
+          <article class="card interactive-card"><div class="icon">🌍</div><h3>Community Impact</h3><p>Technology should support people, local knowledge and better access to useful information.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <!-- QUICK EXPLORER -->
+    <section class="section alt">
+      <div class="container">
+        <div class="section-heading">
+          <p class="eyebrow">INTERACTIVE EXPLORER</p>
+          <h2>Explore a food group</h2>
+          <p>Choose a category to instantly see examples and a simple nutrition message.</p>
+        </div>
+        <div class="food-tabs" role="tablist" aria-label="Food groups">
+          <button class="food-tab active" data-food="staples" type="button">🍚 Staples</button>
+          <button class="food-tab" data-food="protein" type="button">🥚 Protein</button>
+          <button class="food-tab" data-food="vegetables" type="button">🥬 Vegetables</button>
+          <button class="food-tab" data-food="fruit" type="button">🍌 Fruit</button>
+        </div>
+        <div id="foodExplorer" class="explorer-card" aria-live="polite"></div>
+      </div>
+    </section>
 
     <!-- NUTRITION BASICS -->
     <section id="learn" class="section container">
@@ -595,4 +654,3 @@
 
 </body>
 </html>
-```

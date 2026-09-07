@@ -16,3 +16,14 @@ h1{font-size:clamp(2.4rem,6vw,4.7rem);line-height:1.03;margin:0 0 22px;color:var
 footer{background:#102f25;color:#fff;padding:35px 0}.footer-grid{display:flex;justify-content:space-between;gap:30px}.footer-grid p{opacity:.75;margin:5px 0}
 @media(max-width:800px){.nav-links{display:none}.menu-btn{display:block}.nav-links.open{display:flex;position:absolute;top:70px;left:0;right:0;background:#fff;padding:20px;flex-direction:column;border-bottom:1px solid var(--border)}.hero-grid,.plate-guide,.calculator{grid-template-columns:1fr}.cards{grid-template-columns:1fr 1fr}.impact-grid{grid-template-columns:1fr 1fr}.resource-grid{grid-template-columns:1fr}.about-box{flex-direction:column;align-items:flex-start}.project-badge{width:140px;height:140px}.calculator form{grid-template-columns:1fr}}
 @media(max-width:500px){.cards{grid-template-columns:1fr}.impact-grid{grid-template-columns:1fr}.hero{padding-top:55px}.section{padding:65px 0}.hero-actions .btn{width:100%;text-align:center}}
+
+/* Modern interactive layer */
+.brand{display:flex;align-items:center;gap:9px}.brand-logo{width:38px;height:38px;border-radius:50%;object-fit:cover}
+.live-hub{padding-top:55px}.live-panel{display:grid;grid-template-columns:1fr 220px;gap:25px;align-items:center;background:linear-gradient(135deg,#eef7f1,#fff);border:1px solid var(--border);border-radius:22px;padding:30px;box-shadow:0 15px 45px rgba(31,107,79,.08)}
+.live-tip{font-size:1.15rem;color:var(--muted);max-width:720px;min-height:3.2rem}.live-actions{display:flex;gap:12px;flex-wrap:wrap}.live-clock-card{border:1px solid var(--border);border-radius:18px;padding:25px;text-align:center;background:#fff}.live-clock-card span,.live-clock-card small{display:block;color:var(--muted)}.live-clock-card strong{display:block;font-size:1.9rem;color:var(--green-dark);margin:7px 0}
+.interactive-card{transition:transform .25s ease,box-shadow .25s ease}.interactive-card:hover{transform:translateY(-6px);box-shadow:0 18px 35px rgba(31,107,79,.12)}
+.food-tabs{display:flex;gap:10px;flex-wrap:wrap;margin-bottom:20px}.food-tab{border:1px solid var(--border);background:#fff;border-radius:999px;padding:10px 16px;font:inherit;font-weight:800;cursor:pointer;color:var(--text);transition:.2s}.food-tab:hover,.food-tab.active{background:var(--green);color:#fff;border-color:var(--green)}
+.explorer-card{background:#fff;border:1px solid var(--border);border-radius:18px;padding:28px;min-height:145px;box-shadow:0 10px 30px rgba(0,0,0,.04);animation:fadeIn .35s ease}.explorer-card h3{color:var(--green-dark)}.explorer-card p{color:var(--muted);margin-bottom:0}
+@keyframes fadeIn{from{opacity:0;transform:translateY(8px)}to{opacity:1;transform:none}}
+@media(max-width:800px){.live-panel{grid-template-columns:1fr}.live-clock-card{max-width:240px}.cards{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:560px){.cards{grid-template-columns:1fr}.brand span{font-size:.95rem}}
